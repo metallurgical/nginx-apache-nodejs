@@ -322,10 +322,32 @@ Restart nginx
 sudo systemctl restart nginx
 ```
 
-## Test
-When navigate to `http://php-test.example.com`, nginx will redirect traffic to `http://<localhost|server-ip>:8080` which serve the PHP site.
+### Setting up SSL for both apps
+Since we're using nginx as a front web server, certbot must be installed by using nginx configuration. Add certbot PPA
 
-When navigate to `http://node-test.example.com`, nginx will redirect traffic to `http://<localhost|server-ip>:3000` which serve the Node JS site.
+```
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+```
+
+Install certbot
+```
+sudo apt-get install certbot python-certbot-nginx
+```
+
+Run automate ssl installation by using this command
+```
+sudo certbot --nginx
+```
+Done
+
+## Test
+When navigate to `https://php-test.example.com`, nginx will redirect traffic to `https://<localhost|server-ip>:8080` which serve the PHP site.
+
+When navigate to `https://node-test.example.com`, nginx will redirect traffic to `https://<localhost|server-ip>:3000` which serve the Node JS site.
 
 
 
