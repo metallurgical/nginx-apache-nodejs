@@ -231,7 +231,7 @@ sudo systemctl reload apache2
 ```
 
 ### Reverse Proxy from nginx to PHP site
-Pass traffic from port :80 nginx into port :8080 of php apps. Create nginx server block
+Pass traffic from `port :80` nginx into `port :8080` of PHP app. Create nginx server block
 ```
 vim /etc/nginx/sites-available/php-simple-app.conf
 ```
@@ -262,7 +262,7 @@ server {
 ```
 
 ### Reverse Proxy from nginx to Node site
-Pass traffic from port :80 nginx into port :3000 of nodejs. Create nginx server block
+Pass traffic from `port :80` nginx into `port :3000` of nodejs. Create nginx server block
 ```
 vim /etc/nginx/sites-available/node-simple-app.conf
 ```
