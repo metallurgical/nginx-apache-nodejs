@@ -175,7 +175,7 @@ npm init
 npm install --save express
 ```
 
-Run application. Make sure to always run this application to make port :3000 always open.
+Run application. Make sure to always run this application to make `port :3000` always open.
 ```
 node app.js
 ```
