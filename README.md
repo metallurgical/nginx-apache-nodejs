@@ -278,7 +278,7 @@ server {
         location / {
 
                 proxy_pass_header Authorization;
-                proxy_pass http://167.71.211.151:3000; # pass traffic to apache with listen to port 8080
+                proxy_pass http://167.71.211.151:3000; # pass traffic to apache with listen to port 3000
                 proxy_set_header Host $host;
                 proxy_set_header X-Real-IP $remote_addr;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
