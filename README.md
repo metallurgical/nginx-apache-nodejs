@@ -1,13 +1,13 @@
 ## Introduction
 
-Setting up nginx as reverse proxy that forward traffic to apache web server to server PHP and nodejs application using port. Self reference only easy for me to refer next time when needed.
+Setting up nginx as reverse proxy that forward traffic to apache web server to serve PHP and nodejs application using different port. Self reference only easy for me to refer next time when needed.
 
 ## Requirements
 - nginx
 - php (Using php 7.2)
 - apache
-- nodejs simple application run on port: 3000
-- PHP application run on port 8080
+- nodejs simple application run on `port: 3000`
+- PHP application run on `port :8080`
 
 ## Installations
 
@@ -151,7 +151,7 @@ sudo apt install npm
 ```
 
 ### Create simple nodejs application
-Create simple nodejs application which run on port :3000
+Create simple nodejs application which run on `port :3000`
 ```
 mkdir /var/www/node-simple-app
 cd /var/www/node-simple-app
